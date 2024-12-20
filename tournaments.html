@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крупные турниры</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <header>
+        <div class="logo">Киберспорт</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tournaments">
+            <h2>Крупные турниры</h2>
+            
+            <!-- Первый турнир -->
+            <div class="tournament" onclick="openModal('tournament1')">
+                <img src="https://avatars.mds.yandex.net/i?id=783b07b280ed32213b2a9db9baac1c78_sr-10702327-images-thumbs&n=13" alt="The International">
+                <h3>The International</h3>
+                <p>Крупнейший турнир по Dota 2 с рекордным призовым фондом.</p>
+            </div>
+
+            <!-- Модальное окно для первого турнира -->
+            <div id="tournament1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('tournament1')">&times;</span>
+                    <h2>The International</h2>
+                    <p>The International — это крупнейший турнир по Dota 2, который ежегодно проводится Valve.</p>
+                    <p>Призовой фонд турнира часто превышает $30 миллионов, что делает его одним из самых богатых турниров в киберспорте.</p>
+                </div>
+            </div>
+
+            <!-- Второй турнир -->
+            <div class="tournament" onclick="openModal('tournament2')">
+                <img src="https://p1.music.126.net/auvBLcux9Mng2WK-u2dqHw==/109951164188943793.jpg" alt="ESL One">
+                <h3>ESL One</h3>
+                <p>Международный турнир по CS:GO.</p>
+            </div>
+
+            <!-- Модальное окно для второго турнира -->
+            <div id="tournament2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('tournament2')">&times;</span>
+                    <h2>ESL One</h2>
+                    <p>ESL One — это международный турнир по CS:GO, который проводится компанией ESL.</p>
+                    <p>Турнир привлекает лучшие команды со всего мира и имеет призовой фонд в несколько миллионов долларов.</p>
+                </div>
+            </div>
+
+            <!-- Третий турнир -->
+            <div class="tournament" onclick="openModal('tournament3')">
+                <img src="https://i.scdn.co/image/ab67706c0000da8491be7b294369ecab91d269ea" alt="Intel Extreme Masters">
+                <h3>Intel Extreme Masters</h3>
+                <p>Один из самых престижных турниров в киберспорте.</p>
+            </div>
+
+            <!-- Модальное окно для третьего турнира -->
+            <div id="tournament3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('tournament3')">&times;</span>
+                    <h2>Intel Extreme Masters</h2>
+                    <p>Intel Extreme Masters — это один из самых престижных турниров в киберспорте, который проводится компанией ESL.</p>
+                    <p>Турнир привлекает лучшие команды со всего мира и имеет призовой фонд в несколько миллионов долларов.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Киберспорт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

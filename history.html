@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История киберспорта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <header>
+        <div class="logo">Киберспорт</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="history">
+            <h2>История киберспорта</h2>
+            
+            <!-- Первое событие -->
+            <div class="event" onclick="openModal('event1')">
+                <img src="https://avatars.mds.yandex.net/i?id=2d0fca6cd0e8ef9e9221d0f7f724091a_sr-8356382-images-thumbs&n=13" alt="Quake">
+                <h3>Первые соревнования</h3>
+                <p>1997 год — первые официальные соревнования по игре Quake.</p>
+            </div>
+
+            <!-- Модальное окно для первого события -->
+            <div id="event1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('event1')">&times;</span>
+                    <h2>Первые соревнования</h2>
+                    <p>1997 год — первые официальные соревнования по игре Quake.</p>
+                    <p>Это был исторический момент для киберспорта, который заложил основу для будущих соревнований.</p>
+                </div>
+            </div>
+
+            <!-- Второе событие -->
+            <div class="event" onclick="openModal('event2')">
+                <img src="https://avatars.mds.yandex.net/i?id=11cb1787716e399882ce359d3f43a197d3bf12c0-9555577-images-thumbs&n=13" alt="Профессиональные команды">
+                <h3>Появление команд</h3>
+                <p>2000-е годы — формирование профессиональных киберспортивных команд.</p>
+            </div>
+
+            <!-- Модальное окно для второго события -->
+            <div id="event2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('event2')">&times;</span>
+                    <h2>Появление команд</h2>
+                    <p>2000-е годы — формирование профессиональных киберспортивных команд.</p>
+                    <p>Этот период стал важным этапом в развитии киберспорта, так как команды начали профессионально заниматься игрой.</p>
+                </div>
+            </div>
+
+            <!-- Третье событие -->
+            <div class="event" onclick="openModal('event3')">
+                <img src="https://avatars.mds.yandex.net/i?id=dc0a40aab45182db3488745deba480e3_sr-8243281-images-thumbs&n=13" alt="The International">
+                <h3>The International</h3>
+                <p>2011 год — первый турнир The International по Dota 2 с призовым фондом $1.6 млн.</p>
+            </div>
+
+            <!-- Модальное окно для третьего события -->
+            <div id="event3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('event3')">&times;</span>
+                    <h2>The International</h2>
+                    <p>2011 год — первый турнир The International по Dota 2 с призовым фондом $1.6 млн.</p>
+                    <p>Этот турнир стал одним из крупнейших в истории киберспорта и продолжает проводиться ежегодно.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Киберспорт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

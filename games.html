@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярные игры</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-blur"></div>
+    <header>
+        <div class="logo">Киберспорт</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="games.html">Игры</a></li>
+                <li><a href="tournaments.html">Турниры</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="games">
+            <h2>Популярные игры</h2>
+            
+            <!-- Первая игра -->
+            <div class="game" onclick="openModal('game1')">
+                <img src="https://avatars.mds.yandex.net/i?id=15f6a5b9ccf1f152b4823c036b739611_sr-6556603-images-thumbs&n=13a" alt="Dota 2">
+                <h3>Dota 2</h3>
+                <p>Одна из самых популярных игр в киберспорте.</p>
+            </div>
+
+            <!-- Модальное окно для первой игры -->
+            <div id="game1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('game1')">&times;</span>
+                    <h2>Dota 2</h2>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Dota 2 — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Игра известна своими масштабными турнирами, такими как The International, с призовыми фондами в миллионы долларов.</p>
+                </div>
+            </div>
+
+            <!-- Вторая игра -->
+            <div class="game" onclick="openModal('game2')">
+                <img src="https://avatars.mds.yandex.net/i?id=71532253b69d48f4402ea72b0c2deabf_sr-9678500-images-thumbs&n=13" alt="CS2">
+                <h3>CS:GO</h3>
+                <p>Классика среди шутеров от первого лица.</p>
+            </div>
+
+            <!-- Модальное окно для второй игры -->
+            <div id="game2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('game2')">&times;</span>
+                    <h2>CS:GO</h2>
+                    <p>Counter-Strike: Global Offensive — это шутер от первого лица, в котором две команды сражаются за контроль над картой.</p>
+                    <p>Игра известна своими профессиональными турнирами, такими как ESL One и IEM.</p>
+                </div>
+            </div>
+
+            <!-- Третья игра -->
+            <div class="game" onclick="openModal('game3')">
+                <img src="https://avatars.mds.yandex.net/i?id=a6ec516caa7d8c81fc7297b9898ee3e5_sr-6311157-images-thumbs&n=13" alt="League of Legends">
+                <h3>League of Legends</h3>
+                <p>Многопользовательская онлайн-арена.</p>
+            </div>
+
+            <!-- Модальное окно для третьей игры -->
+            <div id="game3" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('game3')">&times;</span>
+                    <h2>League of Legends</h2>
+                    <p>League of Legends — это многопользовательская командная игра в жанре MOBA, в которой игроки сражаются за контроль над картой.</p>
+                    <p>Игра известна своими масштабными турнирами, такими как Worlds, с призовыми фондами в миллионы долларов.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Киберспорт</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
